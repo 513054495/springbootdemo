@@ -10,7 +10,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
  * @createTime 2017-11-14 23:13
  */
 @Configuration
-public class MyWebAppConfig extends WebMvcConfigurerAdapter {
+public class StaticResourceConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/myres/**").addResourceLocations("classpath:/myres/");
